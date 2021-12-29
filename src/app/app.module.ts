@@ -13,6 +13,11 @@ import { FormsModule } from '@angular/forms';
 import { InputComponent } from './componentes/input/input.component';
 import { PrimarioComponent } from './componentes/primario/primario.component';
 import { OutputComponent } from './componentes/output/output.component';
+import { NgIfComponent } from './componentes/ng-if/ng-if.component';
+import { NgForComponent } from './componentes/ng-for/ng-for.component';
+import { NgClassComponent } from './componentes/ng-class/ng-class.component';
+import { NgStyleComponent } from './componentes/ng-style/ng-style.component';
+import { AlterarTextoDirective } from './alterar-texto.directive';
 
 
 @NgModule({
@@ -24,7 +29,12 @@ import { OutputComponent } from './componentes/output/output.component';
     TwoWayComponent,
     InputComponent,
     PrimarioComponent,
-    OutputComponent
+    OutputComponent,
+    NgIfComponent,
+    NgForComponent,
+    NgClassComponent,
+    NgStyleComponent,
+    AlterarTextoDirective
   ],
   imports: [
     BrowserModule,

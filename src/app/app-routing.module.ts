@@ -5,6 +5,10 @@ import { PropertyBindingComponent } from './componentes/property-binding/propert
 import { EventBindingComponent } from './componentes/event-binding/event-binding.component';
 import { TwoWayComponent } from './componentes/two-way/two-way.component';
 import { PrimarioComponent } from './componentes/primario/primario.component';
+import { NgIfComponent } from './componentes/ng-if/ng-if.component';
+import { NgForComponent } from './componentes/ng-for/ng-for.component';
+import { NgClassComponent } from './componentes/ng-class/ng-class.component';
+import { NgStyleComponent } from './componentes/ng-style/ng-style.component';
 
 const routes: Routes = [
   {
@@ -26,6 +30,22 @@ const routes: Routes = [
   {
     path: 'primario',
     component: PrimarioComponent
+  },
+  {
+    path: 'ng-if',
+    component: NgIfComponent
+  },
+  {
+    path: 'ng-for',
+    component: NgForComponent
+  },
+  {
+    path: 'ng-class',
+    component: NgClassComponent
+  },
+  {
+    path: 'ng-style',
+    component: NgStyleComponent
   }
 ];
 
