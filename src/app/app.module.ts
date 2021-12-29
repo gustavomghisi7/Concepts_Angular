@@ -18,6 +18,9 @@ import { NgForComponent } from './componentes/ng-for/ng-for.component';
 import { NgClassComponent } from './componentes/ng-class/ng-class.component';
 import { NgStyleComponent } from './componentes/ng-style/ng-style.component';
 import { AlterarTextoDirective } from './alterar-texto.directive';
+import { CompDirComponent } from './componentes/comp-dir/comp-dir.component';
+import { CompServiceComponent } from './componentes/comp-service/comp-service.component';
+import { ProductService } from './product.service';
 
 
 @NgModule({
@@ -34,14 +37,16 @@ import { AlterarTextoDirective } from './alterar-texto.directive';
     NgForComponent,
     NgClassComponent,
     NgStyleComponent,
-    AlterarTextoDirective
+    AlterarTextoDirective,
+    CompDirComponent,
+    CompServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,6 +9,8 @@ import { NgIfComponent } from './componentes/ng-if/ng-if.component';
 import { NgForComponent } from './componentes/ng-for/ng-for.component';
 import { NgClassComponent } from './componentes/ng-class/ng-class.component';
 import { NgStyleComponent } from './componentes/ng-style/ng-style.component';
+import { CompDirComponent } from './componentes/comp-dir/comp-dir.component';
+import { CompServiceComponent } from './componentes/comp-service/comp-service.component';
 
 const routes: Routes = [
   {
@@ -46,7 +48,15 @@ const routes: Routes = [
   {
     path: 'ng-style',
     component: NgStyleComponent
-  }
+  },
+  {
+    path: 'comp-dir',
+    component: CompDirComponent
+  },
+  {
+    path: 'comp-service',
+    component: CompServiceComponent
+  },
 ];
 
 @NgModule({
