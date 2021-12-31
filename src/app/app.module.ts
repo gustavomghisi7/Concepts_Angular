@@ -17,11 +17,12 @@ import { NgIfComponent } from './componentes/ng-if/ng-if.component';
 import { NgForComponent } from './componentes/ng-for/ng-for.component';
 import { NgClassComponent } from './componentes/ng-class/ng-class.component';
 import { NgStyleComponent } from './componentes/ng-style/ng-style.component';
-import { AlterarTextoDirective } from './alterar-texto.directive';
+import { AlteraTextoDirective } from './altera-texto.directive';
 import { CompDirComponent } from './componentes/comp-dir/comp-dir.component';
 import { CompServiceComponent } from './componentes/comp-service/comp-service.component';
+// importando o service
 import { ProductService } from './product.service';
-
+import { LoggerService } from './logger.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { ProductService } from './product.service';
     NgForComponent,
     NgClassComponent,
     NgStyleComponent,
-    AlterarTextoDirective,
+    AlteraTextoDirective,
     CompDirComponent,
     CompServiceComponent
   ],
@@ -46,7 +47,7 @@ import { ProductService } from './product.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

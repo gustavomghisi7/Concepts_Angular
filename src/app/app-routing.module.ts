@@ -13,55 +13,21 @@ import { CompDirComponent } from './componentes/comp-dir/comp-dir.component';
 import { CompServiceComponent } from './componentes/comp-service/comp-service.component';
 
 const routes: Routes = [
-  {
-    path: 'interpolation',
-    component: InterpolationComponent
-  },
-  {
-    path: 'propbinding',
-    component: PropertyBindingComponent
-  },
-  {
-    path: 'event',
-    component: EventBindingComponent
-  },
-  {
-    path: 'two-way',
-    component: TwoWayComponent
-  },
-  {
-    path: 'primario',
-    component: PrimarioComponent
-  },
-  {
-    path: 'ng-if',
-    component: NgIfComponent
-  },
-  {
-    path: 'ng-for',
-    component: NgForComponent
-  },
-  {
-    path: 'ng-class',
-    component: NgClassComponent
-  },
-  {
-    path: 'ng-style',
-    component: NgStyleComponent
-  },
-  {
-    path: 'comp-dir',
-    component: CompDirComponent
-  },
-  {
-    path: 'comp-service',
-    component: CompServiceComponent
-  },
-];
+  {path:'interpolation', component:InterpolationComponent},
+  {path:'propbinding', component:PropertyBindingComponent},
+  {path:'event', component:EventBindingComponent},
+  {path:'two-way', component:TwoWayComponent},
+  {path:'primario', component:PrimarioComponent},
+  {path:'ng-if', component:NgIfComponent},
+  {path:'ng-for', component:NgForComponent},
+  {path:'ng-class', component:NgClassComponent},
+  {path:'ng-style', component:NgStyleComponent},
+  {path:'comp-dir', component:CompDirComponent},
+  {path:'comp-service', component:CompServiceComponent}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-
 export class AppRoutingModule { }
